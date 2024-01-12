@@ -40,3 +40,31 @@ function PassouDeAno(nota){
 
 PassouDeAno(6)
 PassouDeAno(8)
+
+//ELSE IF
+
+Number.prototype.entre = function(inicio, fim){ //number prototype = pega o número atual
+    return this >= inicio && this <= fim //retornando o valor informado com uma condição
+} //forma mais rápida de fazer a condição ao ínves de fazer em cada else if
+
+//Number.prototype.entre == nota.entre
+
+const imprimeResultado = function(nota) {
+    if(nota.entre(9,10)){
+        console.log('Quadro de Honra')
+    }else if(nota.entre(7, 8.99)){
+        console.log('Aprovado')
+    }else if(nota.entre(4, 6.99)){
+        console.log('Recuperação')
+    }else if(nota.entre(0, 3.99)){
+        console.log('Reprovado')
+    }else{
+        console.log('Nota inválida')
+    }
+}
+
+imprimeResultado(9)
+imprimeResultado(7)
+imprimeResultado(5)
+imprimeResultado(0)
+imprimeResultado(11)
