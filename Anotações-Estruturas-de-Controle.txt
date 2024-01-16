@@ -1,0 +1,6 @@
+ESTRUTURAS DE CONTROLE----------------------------------------------------------
+
+ativ1: IF, IF/ELSE, ELSE/IF
+ativ2: 
+- Switch Case
+- For/ For in, break e continue
